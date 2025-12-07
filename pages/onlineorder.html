@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <meta name="description" content="Order fresh organic smoothies, cold-pressed juices, fruit bowls, and detox drinks online. Healthy, natural drinks with sugar-free and diabetic-friendly options. Delivery in Dublin, Ireland.">
+    <meta name="keywords" content="organic smoothies Dublin, fresh juice Ireland, fruit bowls online, healthy drinks delivery, sugar-free juice, diabetic-friendly smoothies, detox drinks, energy drinks, cold-pressed juice Dublin, organic food Ireland">
+    <meta name="author" content="Greeny Store">
+    <meta name="robots" content="index, follow">
+    
+    <title>Online Order - Greeny Store | Fresh Organic Smoothies, Juices & Fruit Bowls Dublin</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="../index.html">Greeny Store</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="howfreshy.html">How Freshy</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="onlineorder.html">Online Order</a></li>
+                        <li class="nav-item"><a class="nav-link" href="deals.html">Today's Deals</a></li>               
+                        <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="customerservice.html">Customer Service</a></li>
+                    </ul>
+                    <div class="cart-icon-wrapper">
+                        <a href="javascript:void(0)" onclick="viewCart()" class="nav-link" aria-label="View shopping cart">
+                            🛒 <span id="cart-count" class="cart-count-text">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container mt-5">
+        <section class="mb-5">
+            <h1 class="display-4 text-center">Your Daily Fresh Fruit Selection</h1>
+            <p class="lead text-center subtitle">
+                A Fresh selection of sweet, non-sweet, and diabetic-friendly fruits, handpicked daily for quantity and natural taste.
+            </p>
+        </section>
+        
+        <section class="main-section mb-5">
+            <h2 class="section-title mb-3">Smoothies</h2>
+            <p class="section-desc mb-4">
+                A smoothie is a thick, blended beverage made from fruits and vegetables with a liquid base like juice, milk or yogurt.
+            </p>
+
+            <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Energy Boost Smoothie.jpg" class="card-img-top" alt="Energy Boost Smoothie with banana, strawberry, and oats" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Energy Boost Smoothie</h3>
+                            <p class="card-text text small flex-grow-1">Banana, strawberry, oats, milk (or dairy-free).</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€5.10</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(101, 'Energy Boost Smoothie', 'Banana, strawberry, oats, milk (or dairy-free).', 5.10, '../images/Energy Boost Smoothie.jpg')" aria-label="View details for Energy Boost Smoothie">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Green Detox Smoothie.jpg" class="card-img-top" alt="Green Detox Smoothie with spinach, apple, and cucumber" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Green Detox Smoothie</h3>
+                            <p class="card-text text small flex-grow-1">Spinach, green apple, cucumber, lemon.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€5.50</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(102, 'Green Detox Smoothie', 'Spinach, green apple, cucumber, lemon.', 5.50, '../images/Green Detox Smoothie.jpg')" aria-label="View details for Green Detox Smoothie">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Mango Delight Smoothie.jpg" class="card-img-top" alt="Mango Delight Smoothie with yogurt and honey" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Mango Delight Smoothie</h3>
+                            <p class="card-text text small flex-grow-1">Mango, yogurt, honey.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€5.35</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(103, 'Mango Delight Smoothie', 'Mango, yogurt, honey.', 5.35, '../images/Mango Delight Smoothie.jpg')" aria-label="View details for Mango Delight Smoothie">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Diabetic Friendly Smoothie.jpg" class="card-img-top" alt="Diabetic-Friendly Smoothie with mixed berries and sugar-free yogurt" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Diabetic-Friendly Smoothie</h3>
+                            <p class="card-text text small flex-grow-1">Mixed berries, Sugar-free yogurt</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€5.00</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(104, 'Diabetic-Friendly Smoothie', 'Mixed berries, Sugar-free yogurt', 5.00, '../images/Diabetic Friendly Smoothie.jpg')" aria-label="View details for Diabetic-Friendly Smoothie">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="main-section mb-5">
+            <h2 class="section-title mb-3">Fresh Juices</h2>
+            <p class="section-desc mb-4">
+                Cold-pressed juices made from ripe, organic fruits. Naturally sweet, hydrating, and customizable for all preferences including sugar-free and diabetic-friendly.
+            </p>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Orange Pure.jpg" class="card-img-top" alt="Pure Orange Juice cold-pressed and organic" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Orange Pure</h3>
+                            <p class="card-text text small flex-grow-1">Whole, sieved oranges; no artificial flavors or preservatives. High in Vitamin C and low in fat.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€4.50</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(201, 'Orange Pure', 'Whole, sieved oranges; no artificial flavors or preservatives. High in Vitamin C and low in fat.', 4.50, '../images/Orange Pure.jpg')" aria-label="View details for Orange Pure Juice">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Apple Glow.jpg" class="card-img-top" alt="Apple Glow Juice with organic green and red apples" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Apple Glow</h3>
+                            <p class="card-text text small flex-grow-1">Blend of organic green & red apples, crisp and sweet taste profile.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€4.50</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(202, 'Apple Glow', 'Blend of organic green & red apples, crisp and sweet taste profile.', 4.50, '../images/Apple Glow.jpg')" aria-label="View details for Apple Glow Juice">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Watermelon Fresh.jpg" class="card-img-top" alt="Fresh Watermelon Juice hydrating and refreshing" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Watermelon Fresh</h3>
+                            <p class="card-text text small flex-grow-1">Hydrating beverage with electrolytes, antioxidants, and vitamins A & C.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€4.00</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(203, 'Watermelon Fresh', 'Hydrating beverage with electrolytes, antioxidants, and vitamins A & C.', 4.00, '../images/Watermelon Fresh.jpg')" aria-label="View details for Watermelon Fresh Juice">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Sugar-Free Mix.jpg" class="card-img-top" alt="Sugar-Free Mixed Juice healthy and refreshing" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Sugar-Free Mix</h3>
+                            <p class="card-text text small flex-grow-1">Light, refreshing, and healthy; great for any time of day.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€4.00</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(204, 'Sugar-Free Mix', 'Light, refreshing, and healthy; great for any time of day.', 4.00, '../images/Sugar-Free Mix.jpg')" aria-label="View details for Sugar-Free Mix Juice">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Carrot Juice.jpg" class="card-img-top" alt="Carrot Juice rich in beta-carotene and vitamin A" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Carrot Juice</h3>
+                            <p class="card-text text small flex-grow-1">Blended carrots, rich in beta-carotene, converting to vitamin A.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€4.50</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(205, 'Carrot Juice', 'Blended carrots, rich in beta-carotene, converting to vitamin A.', 4.50, '../images/Carrot Juice.jpg')" aria-label="View details for Carrot Juice">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Pineapple Juice.webp" class="card-img-top" alt="Pineapple Juice sweet and tangy tropical flavor" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Pineapple Juice</h3>
+                            <p class="card-text text small flex-grow-1">Sweet, tangy tropical flavor from pressed pineapple fruit.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€4.50</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(206, 'Pineapple Juice', 'Sweet, tangy tropical flavor from pressed pineapple fruit.', 4.50, '../images/Pineapple Juice.webp')" aria-label="View details for Pineapple Juice">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+        
+        <section class="main-section mb-5">
+            <h2 class="section-title mb-3">Fruit Bowls</h2>
+            <p class="section-desc mb-4">
+                Freshly cut fruit bowls with seasonal fruits, handpicked for maximum flavor and nutrition. Choose from tropical, berry, and seasonal varieties.
+            </p>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Tropical Fruit Bowl.avif" class="card-img-top" alt="Tropical Fruit Bowl with pineapple, mango, and kiwi" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Tropical Fruit Bowl</h3>
+                            <p class="card-text text small flex-grow-1">A mix of pineapple, mango, and kiwi for a sweet and tangy tropical treat.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€6.00</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(301, 'Tropical Fruit Bowl', 'A mix of pineapple, mango, and kiwi for a sweet and tangy tropical treat.', 6.00, '../images/Tropical Fruit Bowl.avif')" aria-label="View details for Tropical Fruit Bowl">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Berry Medley Bowl.jpg" class="card-img-top" alt="Berry Medley Bowl with strawberries, blueberries, and raspberries" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Berry Medley Bowl</h3>
+                            <p class="card-text text small flex-grow-1">Strawberries, blueberries, and raspberries served fresh or with yogurt.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€6.50</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(302, 'Berry Medley Bowl', 'Strawberries, blueberries, and raspberries served fresh or with yogurt.', 6.50, '../images/Berry Medley Bowl.jpg')" aria-label="View details for Berry Medley Bowl">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Seasonal Fruit Bowl Summer.jpg" class="card-img-top" alt="Seasonal Summer Fruit Bowl with fresh seasonal fruits" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Seasonal Fruit Bowl Summer</h3>
+                            <p class="card-text text small flex-grow-1">Fresh fruits of the summer season, cut and served for maximum freshness and flavor.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€5.50</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(303, 'Seasonal Fruit Bowl Summer', 'Fresh fruits of the summer season.', 5.50, '../images/Seasonal Fruit Bowl Summer.jpg')" aria-label="View details for Seasonal Summer Fruit Bowl">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Seasonal Fruit Bowl Spring.jpg" class="card-img-top" alt="Seasonal Spring Fruit Bowl with fresh spring fruits" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Seasonal Fruit Bowl Spring</h3>
+                            <p class="card-text text small flex-grow-1">Fresh fruits of the spring season, cut and served for maximum freshness and flavor.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€5.50</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(304, 'Seasonal Fruit Bowl Spring', 'Fresh fruits of the spring season.', 5.50, '../images/Seasonal Fruit Bowl Spring.jpg')" aria-label="View details for Seasonal Spring Fruit Bowl">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Seasonal Fruit Bowl Winter.jpg" class="card-img-top" alt="Seasonal Winter Fruit Bowl with fresh winter fruits" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Seasonal Fruit Bowl Winter</h3>
+                            <p class="card-text text small flex-grow-1">Fresh fruits of the winter season, cut and served for maximum freshness and flavor.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€5.50</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(305, 'Seasonal Fruit Bowl Winter', 'Fresh fruits of the winter season.', 5.50, '../images/Seasonal Fruit Bowl Winter.jpg')" aria-label="View details for Seasonal Winter Fruit Bowl">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Seasonal Fruit Bowl Autumn.jpg" class="card-img-top" alt="Seasonal Autumn Fruit Bowl with fresh autumn fruits" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Seasonal Fruit Bowl Autumn</h3>
+                            <p class="card-text text small flex-grow-1">Fresh fruits of the autumn season, cut and served for maximum freshness and flavor.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€5.50</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(306, 'Seasonal Fruit Bowl Autumn', 'Fresh fruits of the autumn season.', 5.50, '../images/Seasonal Fruit Bowl Autumn.jpg')" aria-label="View details for Seasonal Autumn Fruit Bowl">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        
+
+        
+
+        <section class="main-section mb-5">
+            <h2 class="section-title mb-3">Detox and Energy Drinks</h2>
+            <p class="section-desc mb-4">
+                Natural, refreshing, and revitalizing which hydrate your body and boost your energy.
+            </p>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Ginger Lemon Detox.jpg" class="card-img-top" alt="Ginger Lemon Detox drink with fresh ginger and lemon" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Ginger Lemon Detox</h3>
+                            <p class="card-text text small flex-grow-1">A zesty, cleansing drink with fresh ginger, lemon, and mint.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€4.50</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(401, 'Ginger Lemon Detox', 'A zesty, cleansing drink with fresh ginger, lemon, and mint.', 4.50, '../images/Ginger Lemon Detox.jpg')" aria-label="View details for Ginger Lemon Detox">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Lime Mint Cooler.jpg" class="card-img-top" alt="Lime Mint Cooler refreshing drink with cucumber" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Lime Mint Cooler</h3>
+                            <p class="card-text text small flex-grow-1">Refreshing lime, cucumber, and mint blended to energize you.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€4.50</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(402, 'Lime Mint Cooler', 'Refreshing lime, cucumber, and mint blended to energize you.', 4.50, '../images/Lime Mint Cooler.jpg')" aria-label="View details for Lime Mint Cooler">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Cucumber Engergy Water.jpg" class="card-img-top" alt="Cucumber Energy Water hydrating and revitalizing" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Cucumber Energy Water</h3>
+                            <p class="card-text text small flex-grow-1">Hydrating and revitalizing, perfect for a natural energy boost.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€4.00</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(403, 'Cucumber Energy Water', 'Hydrating and revitalizing for natural energy.', 4.00, '../images/Cucumber Engergy Water.jpg')" aria-label="View details for Cucumber Energy Water">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <article class="card h-100 item-card">
+                        <img src="../images/Chia Power Drink.webp" class="card-img-top" alt="Chia Power Drink with chia seeds and fruit juice" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Chia Power Drink</h3>
+                            <p class="card-text text small flex-grow-1">Chia seeds soaked in fruit juice for a fiber-packed energizing drink.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <p class="price fw-bold mb-0">€5.00</p>
+                                <button class="btn btn-sm details-btn" onclick="openDetails(404, 'Chia Power Drink', 'Chia seeds soaked in fruit juice for a fiber-packed energizing drink.', 5.00, '../images/Chia Power Drink.webp')" aria-label="View details for Chia Power Drink">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    
+    <div id="detailsModal" class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+        <div class="modal-content cart">
+            <span class="close" onclick="closeDetails()" aria-label="Close modal">&times;</span>
+
+            <img id="modal-img" src="" alt="" class="img-fluid mb-3">
+            <h2 id="modal-title" class="mb-2"></h2>
+            <p id="modal-desc" class="mb-4"></p>
+            
+            <div id="bundle-options" class="bundle-selector" style="display: none;">
+                <label class="label mb-2">Select Your 3 Choices</label>
+                <div id="smoothie-selectors" class="d-flex flex-column gap-2 mb-3">
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label class="label form-label" for="modal-request">Special Request</label>
+                <textarea id="modal-request" class="form-control" placeholder="We'll do our best to accommodate any requests when possible." aria-label="Special request for your order"></textarea>
+            </div>
+
+            <label class="label form-label" for="modal-qty">Quantity</label>
+            <div class="qty-selector-group input-group mb-4">
+                <button class="btn btn-outline-secondary" type="button" onclick="changeQty(-1)" aria-label="Decrease quantity">−</button>
+                <span id="modal-qty-display" class="form-control text-center bg-white" aria-live="polite">1</span>
+                <button class="btn btn-outline-secondary" type="button" onclick="changeQty(1)" aria-label="Increase quantity">+</button>
+                <input type="hidden" id="modal-qty" value="1" min="1">
+            </div>
+            
+            <button class="add-cart-btn btn btn-success w-100 py-2" onclick="addToCart()">
+                Add to Cart | €<span id="modal-price-btn">0.00</span>
+            </button>
+        </div>
+    </div>
+    
+    <aside id="cartSidebar" class="sidebar" aria-label="Shopping cart">
+        <div class="sidebar-header">
+            <h2>Cart (0 Items)</h2>
+            <span class="close-sidebar" onclick="closeCart()" aria-label="Close cart">&times;</span>
+        </div>
+        
+        <div class="cart-items" aria-live="polite">
+            <p class="text-center text-muted p-5">Your cart is empty!</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="promo-code mb-3">
+                <input type="text" class="form-control" placeholder="Enter a promo code" aria-label="Promo code">
+            </div>
+            
+            <div class="total-summary d-flex justify-content-between fw-bold fs-5 mb-2">
+                <p>Estimated total</p>
+                <p class="total-price">€0.00</p>
+            </div>
+            <p class="shipping-note small text-muted mb-3">Taxes and shipping are calculated at checkout.</p>
+
+            <button class="checkout-btn btn btn-success w-100 mb-2" onclick="startCheckout()">Checkout</button>
+            <button class="view-cart-btn btn btn-outline-secondary w-100" onclick="closeCart()">Back to Shopping</button>
+
+            <p class="secure-checkout text-center small mt-3">
+                <i class="lock-icon" aria-hidden="true">🔒</i> Secure Checkout
+            </p>
+        </div>
+    </aside>
+
+  <footer class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+  
+        <div class="footer__link--items">
+          <h3 class="footer__column">About Us</h3>
+          <a href="#">Founded</a>
+          <a href="#">Our Committment</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer__link--items">
+          <h3 class="footer__column">Services</h3>
+          <a href="#farm-life">Farm Information</a>
+          <a href="#verification">Certifications</a>
+          <a href="#">Customer Service</a>
+        </div>
+        <div class="footer__link--items">
+          <h3 class="footer__column">Explore More</h3>
+          <a href="#">Seasonal Guide</a>
+          <a href="#">Fruit Recipes</a>
+          <a href="#">Health Benefits</a>
+          <a href="#">Farming Practices</a>
+        </div>
+  
+        <div class="footer__link--items contact-info">
+          <h3 class="footer__column">Contact Us</h3>
+  
+          <p>
+            <a href="tel:+353804081839">(+353) 80 408 1839</a></p>
+  
+          <p> 8:00–16:00</p>
+  
+          <p>
+            <a href="mailto:greenystore@org.com">greenystore@org.com</a></p>
+  
+          <p> 32 Church Avenue.<br>
+            D19 AK94 Dublin 19<br>
+            IRELAND, EUROPE</p>
+  
+          <p><i class="fas fa-id-card"></i> Business ID: 2430509-0</p>
+        </div>
+      </div> 
+    </div> 
+    <div class="social__media">
+      <div class="social__media--wrap">
+        <p class="website__rights">© 2025 Greeny Store | All Rights Reserved</p>
+        <div class="social__icons">
+          <a href="#" class="social__icon--link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social__icon--link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social__icon--link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social__icon--link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div> 
+    </div> 
+  </footer>
+    
+    <script src="../js/script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
