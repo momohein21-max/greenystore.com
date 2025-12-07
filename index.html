@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <meta name="description" content="Greeny Store: Dublin's source for fresh, organic fruits, smoothies, cold-pressed juices, and fruit bowls.">
+    <meta name="keywords" content="organic smoothies Dublin, fresh juice Ireland, healthy drinks delivery, detox, greeny store">
+    <meta name="author" content="Greeny Store">
+    <meta name="robots" content="index, follow">
+    
+    <title>Greeny Store | Fresh Organic Fruits & Beverages Dublin</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="index.html">Greeny Store</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/howfreshy.html">How Freshy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/onlineorder.html">Online Order</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/deals.html">Today's Deals</a></li>               
+                        <li class="nav-item"><a class="nav-link" href="./pages/registration.html">Registration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/customerservice.html">Customer Service</a></li>
+                    </ul>
+                    <div class="cart-icon-wrapper">
+                        <a href="javascript:void(0)" onclick="viewCart()" class="nav-link" aria-label="View shopping cart">
+                            🛒 <span id="cart-count" class="cart-count-text">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <header class="hero-section">
+        <div class="container">
+            <h1>Tastiest Fresh Organic Fruits</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="main container py-5">
+            <h2 class="section-title text-center mb-4">Our Top Organic Picks</h2>
+            <div class="main__container">
+                <div class="main__gallery--container">
+                    
+                    <div class="gallery-item">
+                        <img src="images/01.jpg" alt="Fresh Organic Apples" class="gallery-img">
+                        <a href="./pages/onlineorder.html" class="order-btn" aria-label="Order Organic Apples Now">Order Now</a>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/02.jpg" alt="Organic Bananas on the bunch" class="gallery-img">
+                        <a href="./pages/onlineorder.html" class="order-btn" aria-label="Order Organic Bananas Now">Order Now</a>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/03.jpg" alt="Ripe Organic Strawberries" class="gallery-img">
+                        <a href="./pages/onlineorder.html" class="order-btn" aria-label="Order Organic Strawberries Now">Order Now</a>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/04.jpg" alt="Organic Citrus Fruits" class="gallery-img">
+                        <a href="./pages/onlineorder.html" class="order-btn" aria-label="Order Organic Citrus Now">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="mission">
+            <div class="container">
+                <h1>Our Mission</h1>
+                <div class="services__container row mx-auto">
+                    
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="services__card w-100" style="background-image:url('./images/mission.jpg');">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="p-4 p-md-5 text-start">
+                            <h2 class="section-title">Our Promise of Pure, Natural Goodness</h2>
+                            <p>At <b>Greeny Store</b>, our mission is to provide fresh, high-quality fruits and natural beverages that nourish the body and delight the senses. We are committed to promoting healthy lifestyles, supporting local farmers, and offering our customers a refreshing, wholesome experience every day.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services container py-5" id="AboutUs">
+            <h1 class="section-title text-center mb-4">About Us</h1>
+            <div class="services__container">
+                <div class="services__card" style="background-image:url('images/aboutus1.jpg'); width: 45%;">
+                </div>
+                <div class="services__card" style="background-image:url('images/fresh3.jpg'); width: 45%;">
+                </div>
+            </div>
+            <p class="lead text-center">
+                Greeny Store is dedicated to delivering the freshest, <b>100% organic fruits</b> sourced from local farms. Our wide selection includes apples, bananas, oranges, grapes, pineapples, strawberries, and avocados. We prioritize quality and cleanliness, offering healthy options such as **low-sugar fruits** for individuals with dietary needs, like those with diabetes. Our journey began with a passion for healthy eating and has grown to meet the community's demand for safe and nutritious fruit choices.
+            </p>
+        </section>
+
+        <section class="services2 container py-5 bg-light">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Why Choose Greeny Store</h2>
+                <h3 class="h4 fw-bold text-success mt-3">100% Organic</h3>
+                <p class="lead">We are committed to sourcing 100% organic fruits to ensure that you receive the highest quality and most natural products.</p>
+            </div>
+            
+            <div class="services2__container">
+                
+                    <div class="services2__card">
+                        <img src="images/services3.jpg" alt="Organic produce being sorted" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
+                    </div>
+               
+             
+                    <div class="services2__card">
+                        <img src="images/services34.jpg" alt="Farm worker holding basket of fruit" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
+                    </div>
+              
+             
+                    <div class="services2__card">
+                        <img src="images/fresh2.jpg" alt="Close-up of fresh produce at market" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
+                    </div>
+               
+            </div>
+            
+            <div class="text-center mt-5">
+                <h2 class="section-title">Dietary Options</h2>
+                <p class="lead">From low-sugar options for individuals with diabetes to a wide range of fruits for various dietary needs, we provide healthy choices for everyone.</p>
+            </div>
+
+            <div class="services3__container">
+         
+                    <div class="services3__card">
+                        <img src="images/services22.jpg" alt="Low sugar fruit selection" class="img-fluid gallery-img">
+                        <a href="./pages/onlineorder.html" class="order-btn">Order Now</a>
+                    </div>
+           
+               
+                    <div class="services3__card">
+                        <img src="images/services23.jpg" alt="Variety of citrus fruits" class="img-fluid gallery-img">
+                        <a href="./pages/onlineorder.html" class="order-btn">Order Now</a>
+                    </div>
+             
+           
+                    <div class="services3__card">
+                        <img src="images/services24.jpg" alt="Tropical fruit arrangement" class="img-fluid gallery-img">
+                        <a href="./pages/onlineorder.html" class="order-btn">Order Now</a>
+                    </div>
+             
+               
+                    <div class="services3__card">
+                        <img src="images/services25.jpg" alt="Berries and stone fruit" class="img-fluid gallery-img">
+                        <a href="./pages/onlineorder.html" class="order-btn">Order Now</a>
+                    </div>
+              
+            </div>
+            
+            <div class="text-center mt-5 pt-4 border-top">
+                <h2 class="section-title">Community Support & Satisfaction</h2>
+                <p class="lead">We support local farmers and promote sustainable practices to contribute to the well-being of our community and the environment.</p>
+                
+                <div class="star-rating my-3 fs-3 text-warning">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+                <h2 class="section-title">Customer Satisfaction</h2> 
+                <p class="lead">Your satisfaction is our priority. We strive to deliver exceptional products and services that align with your health and wellness goals.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="detailsModal" class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+        <div class="modal-content cart">
+            <span class="close" onclick="closeDetails()" aria-label="Close modal">&times;</span>
+
+            <img id="modal-img" src="" alt="" class="img-fluid mb-3">
+            <h2 id="modal-title" class="mb-2"></h2>
+            <p id="modal-desc" class="mb-4"></p>
+            
+            <div id="bundle-options" class="bundle-selector" style="display: none;">
+                <label class="label mb-2">Select Your 3 Choices</label>
+                <div id="smoothie-selectors" class="d-flex flex-column gap-2 mb-3">
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label class="label form-label" for="modal-request">Special Request</label>
+                <textarea id="modal-request" class="form-control" placeholder="We'll do our best to accommodate any requests when possible." aria-label="Special request for your order"></textarea>
+            </div>
+
+            <label class="label form-label" for="modal-qty">Quantity</label>
+            <div class="qty-selector-group input-group mb-4">
+                <button class="btn btn-outline-secondary" type="button" onclick="changeQty(-1)" aria-label="Decrease quantity">−</button>
+                <span id="modal-qty-display" class="form-control text-center bg-white" aria-live="polite">1</span>
+                <button class="btn btn-outline-secondary" type="button" onclick="changeQty(1)" aria-label="Increase quantity">+</button>
+                <input type="hidden" id="modal-qty" value="1" min="1">
+            </div>
+            
+            <button class="add-cart-btn btn btn-success w-100 py-2" onclick="addToCart()">
+                Add to Cart | €<span id="modal-price-btn">0.00</span>
+            </button>
+        </div>
+    </div>
+    
+    <aside id="cartSidebar" class="sidebar" aria-label="Shopping cart">
+        <div class="sidebar-header">
+            <h2>Cart (0 Items)</h2>
+            <span class="close-sidebar" onclick="closeCart()" aria-label="Close cart">&times;</span>
+        </div>
+        
+        <div class="cart-items" aria-live="polite">
+            <p class="text-center text-muted p-5">Your cart is empty!</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="promo-code mb-3">
+                <input type="text" class="form-control" placeholder="Enter a promo code" aria-label="Promo code">
+            </div>
+            
+            <div class="total-summary d-flex justify-content-between fw-bold fs-5 mb-2">
+                <p>Estimated total</p>
+                <p class="total-price">€0.00</p>
+            </div>
+            <p class="shipping-note small text-muted mb-3">Taxes and shipping are calculated at checkout.</p>
+
+            <button class="checkout-btn btn btn-success w-100 mb-2" onclick="startCheckout()">Checkout</button>
+            <button class="view-cart-btn btn btn-outline-secondary w-100" onclick="closeCart()">Back to Shopping</button>
+
+            <p class="secure-checkout text-center small mt-3">
+                <i class="lock-icon" aria-hidden="true">🔒</i> Secure Checkout
+            </p>
+        </div>
+    </aside>
+
+    <footer class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+  
+        <div class="footer__link--items">
+          <h3 class="footer__column">About Us</h3>
+          <a href="#">Founded</a>
+          <a href="#">Our Committment</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer__link--items">
+          <h3 class="footer__column">Services</h3>
+          <a href="#farm-life">Farm Information</a>
+          <a href="#verification">Certifications</a>
+          <a href="#">Customer Service</a>
+        </div>
+        <div class="footer__link--items">
+          <h3 class="footer__column">Explore More</h3>
+          <a href="#">Seasonal Guide</a>
+          <a href="#">Fruit Recipes</a>
+          <a href="#">Health Benefits</a>
+          <a href="#">Farming Practices</a>
+        </div>
+  
+        <div class="footer__link--items contact-info">
+          <h3 class="footer__column">Contact Us</h3>
+  
+          <p>
+            <a href="tel:+353804081839">(+353) 80 408 1839</a></p>
+  
+          <p> 8:00–16:00</p>
+  
+          <p>
+            <a href="mailto:greenystore@org.com">greenystore@org.com</a></p>
+  
+          <p> 32 Church Avenue.<br>
+            D19 AK94 Dublin 19<br>
+            IRELAND, EUROPE</p>
+  
+          <p><i class="fas fa-id-card"></i> Business ID: 2430509-0</p>
+        </div>
+      </div> 
+    </div> 
+    <div class="social__media">
+      <div class="social__media--wrap">
+        <p class="website__rights">© 2025 Greeny Store | All Rights Reserved</p>
+        <div class="social__icons">
+          <a href="#" class="social__icon--link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social__icon--link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social__icon--link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social__icon--link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div> 
+    </div> 
+  </footer>
+    
+    <script src="./js/script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
